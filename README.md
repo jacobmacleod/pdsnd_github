@@ -1,4 +1,4 @@
-
+# Programming for Data Science with Python - Explore Bikeshare Data
 
 ### Date created
 December 17, 2021
@@ -10,8 +10,9 @@ Explore Bikeshare Data
 This project analyzes and outputs statistics about bikeshare data selected by the user. The data is stored as a .csv files for each city and the user inputs which city to view data for. The program shows data about popular times of travel, popular bikeshare stations, trip durations, and user demographics.
 
 ### Files used
-bikeshare.py - program
-chicago.csv, new_york_city.csv, washington.csv - data files
+**bikeshare.py** - program
+
+**chicago.csv, new_york_city.csv, washington.csv** - data files
 
 ### Credits
 I read Udacity Mentor questions asked by other people and the answers to help me with this project. I also used the Pandas documentation. I also used Stack Overflow answers including:
