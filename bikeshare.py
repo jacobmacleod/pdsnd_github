@@ -146,7 +146,7 @@ def trip_duration_stats(df):
     # display shortest travel time
     min_travel_time = df['Trip Duration'].min()
     print('The shortest travel time in the data is {}'.format(str(datetime.timedelta(seconds=int(min_travel_time)))))
-    # display mean travel time
+    # display average travel time
     mean_travel_time = df['Trip Duration'].mean()
     print('The average travel time is {}'.format((str(datetime.timedelta(seconds=int(mean_travel_time))))))
     #display longest travel time
