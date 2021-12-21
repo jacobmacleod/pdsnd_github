@@ -12,7 +12,7 @@ This project analyzes and outputs statistics about bikeshare data selected by th
 ### Files used
 **bikeshare.py** - program
 
-**chicago.csv, new_york_city.csv, washington.csv** - data files
+**chicago.csv, new_york_city.csv, washington.csv** - files with city bikeshare data
 
 ### Credits
 I read Udacity Mentor questions asked by other people and the answers to help me with this project. I also used the Pandas documentation. I also used Stack Overflow answers including:
