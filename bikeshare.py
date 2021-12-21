@@ -22,7 +22,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington)
     city = input('Which city would you like to analyze: Chicago, New York City, or Washington? ')
     city = city.lower()
     while city not in CITY_DATA:
@@ -76,7 +76,12 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Displays statistics on the most frequent times of travel.
+
+    Args:
+        (DataFrame) df - the data to analyze and print statitics about
+    """
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -100,7 +105,12 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """
+    Displays statistics on the most popular stations and trip.
+
+    Args:
+        (DataFrame) df - the data to analyze and print statitics about
+    """
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -122,7 +132,12 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """
+    Displays statistics on the total and average trip duration.
+
+    Args:
+        (DataFrame) df - the data to analyze and print statitics about
+    """
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
@@ -143,7 +158,12 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
+    """
+    Displays statistics on bikeshare users.
+
+    Args:
+        (DataFrame) df - the data to analyze and print statitics about
+    """
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -171,7 +191,12 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
-    """Displays raw data from the DataFrame"""
+    """
+    Displays raw data from the DataFrame
+
+    Args:
+        (DataFrame) df - the data to print raw data from
+    """
     raw_data = input('\nWould you like to see raw data? Enter yes or no.\n')
     index = 0
     while raw_data.lower() == 'yes':
