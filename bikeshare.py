@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 import datetime
+from tabulate import tabulate
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -176,7 +177,7 @@ def raw_data(df):
     index = 0
     pd.set_option('display.max_columns',200)
     while raw_data.lower() == 'yes':
-        print(df.iloc[index:index + 5])
+        print(tabulate(df.iloc[np.arange(index, index + 5)], headers="keys"))
         index += 5
         raw_data = input('\nWould you like to see raw data? Enter yes or no.\n')
 
