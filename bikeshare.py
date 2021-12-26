@@ -199,8 +199,10 @@ def raw_data(df):
     """
     raw_data = input('\nWould you like to see raw data? Enter yes or no.\n')
     index = 0
+    pd.set_option('display.max_columns',200)
     while raw_data.lower() == 'yes':
         print(df.iloc[index:index + 5])
+        index += 5
         raw_data = input('\nWould you like to see raw data? Enter yes or no.\n')
 
 def main():
